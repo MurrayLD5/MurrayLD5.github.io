@@ -5,7 +5,7 @@
     </header>
     <body>
         <div id="welcome">
-            <video src="Welcome Clip.mp4" width="101%" style="margin-left: -8px; margin-top: 0px" autoplay muted></video>
+            <video id="topclip" src="newwelcomeclip.mp4" width="101%" style="margin-left: -8px; margin-top: 0px" autoplay muted loop></video>
             <h3 id="welcometext">MurrayLD</h3>
             <h3 id="welcomesubtext">Welcome to my website</h3>
         </div>
@@ -35,6 +35,8 @@
             </table></center>
         </div>
         <script>
+            document.getElementById("topclip").currentTime = Math.floor(Math.random() * 19);;
+            //document.getElementById("topclip").play();
             var opacity_about = 0;
             var opacity_softwareiuse = 0;
             var opacity_companiesiworkwith = 0;
