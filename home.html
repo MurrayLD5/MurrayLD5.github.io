@@ -4,9 +4,72 @@
         <iframe src="headerpage.html" width="100%" height="125px" style="border: none"></iframe>
     </header>
     <body>
-    <div>
-        <p>Website coming soon...</p>
-    </div>
+        <div id="welcome">
+            <video src="Welcome Clip.mp4" width="101%" style="margin-left: -8px; margin-top: 0px" autoplay muted></video>
+            <h3 id="welcometext">MurrayLD</h3>
+            <h3 id="welcomesubtext">Welcome to my website</h3>
+        </div>
+        <div id="about">
+            <p id="abouttext">Aspiring lighting designer based in Peterborough, England.</p>
+        </div>
+        <div id="softwareiuse">
+            <p>Software I use:</p>
+            <center><table width="50%">
+                <tr width="100%">
+                    <td><a href="https://www.avolites.com/" target="_blank"><image class="softwareiuselogo" src="logoavolites.jpg"></image></a></td>
+                    <td><a href="https://www.blender.org/" target="_blank"><image class="softwareiuselogo2" src="logoblender.jpg"></image></a></td>
+                    <td><a href="https://www.capture.se/" target="_blank"><image class="softwareiuselogo" src="logocapture.jpg"></image></a></td>
+                    <td><a href="https://chamsyslighting.com/" target="_blank"><image class="softwareiuselogo2" src="logochamsys.jpg"></image></a></td>
+                    <td><a href="https://www.gimp.org/" target="_blank"><image class="softwareiuselogo" src="logogimp.jpg"></image></a></td>
+                </tr>
+            </table></center>
+        </div>
+        <div id="companiesiworkwith">
+            <p>Companies I work with:</p>
+            <center><table width="50%">
+                <tr width="100%">
+                    <td><a href="https://youngtechacademy.co.uk/" target="_blank"><image class="softwareiuselogo" src="ytlogo.jpg"></image></a></td>
+                    <td><a href="https://limelight-academy.co.uk/" target="_blank"><image class="softwareiuselogo2" src="logolapa.jpg"></image></a></td>
+                    <td><a href="https://medusalive.co.uk/" target="_blank"><image class="softwareiuselogo" src="mllogo.jpg"></image></a></td>
+                </tr>
+            </table></center>
+        </div>
+        <script>
+            var opacity_about = 0;
+            var opacity_softwareiuse = 0;
+            var opacity_companiesiworkwith = 0;
+            function update_opacity() {
+                if ((document.getElementById("about").getBoundingClientRect().top) < window.innerHeight) {
+                    if (opacity_about < 100) {
+                        opacity_about = opacity_about + 1;
+                    };
+                }
+                else {
+                    opacity_about = 0;
+                };
+                if ((document.getElementById("softwareiuse").getBoundingClientRect().top) < window.innerHeight) {
+                    if (opacity_softwareiuse < 100) {
+                        opacity_softwareiuse = opacity_softwareiuse + 1;
+                    };
+                }
+                else {
+                    opacity_softwareiuse = 0;
+                };
+                if ((document.getElementById("companiesiworkwith").getBoundingClientRect().top) < window.innerHeight) {
+                    if (opacity_companiesiworkwith < 100) {
+                        opacity_companiesiworkwith = opacity_companiesiworkwith + 1;
+                    };
+                }
+                else {
+                    opacity_companiesiworkwith = 0;
+                };
+                document.getElementById("about").style.opacity = opacity_about + "%";
+                document.getElementById("softwareiuse").style.opacity = opacity_softwareiuse + "%";
+                document.getElementById("companiesiworkwith").style.opacity = opacity_companiesiworkwith + "%";
+                setTimeout(update_opacity, 10);
+            }
+            update_opacity();
+        </script>
     </body>
     <footer>
         <iframe src="footerpage.html" style="border: none" width="100%" height="250px"></iframe>

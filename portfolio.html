@@ -1,0 +1,174 @@
+<html>
+    <link rel="stylesheet" href="style.css">
+    <header id="banner">
+        <iframe src="headerpage.html" width="100%" height="125px" style="border: none"></iframe>
+    </header>
+    <body>
+    <div>
+        <p id="portfoliotitletext" class="pagetitletext">Portfolio</p>
+    </div>
+    <div id="portfoliosection_liveeventsworkshopdiv" class="portfoliosection">
+        <table width="100%">
+            <tr width="100%">
+                <td><h3>Live events workshop</h3></td>
+            </tr>
+            <tr><td><table><tr><td><table><tr>
+                                        <td><h3 class="portfoliodate">April 2025</h3></td>
+                                    </tr>
+                                    <tr>
+                                        <td><image onclick="changeimage_liveeventsworkshop()" class="portfolioimage" src="liveeventsworkshop1.png" id="image_liveeventsworkshop"></image></td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>
+                                <p class="portfoliotext">Over 3 days me and a team of people planned, build and ran a small music gig.  On the day of the show, the team was split into groups which ran lighting and sound (I did lighting 😁).</p>
+                            </td>
+                        </tr></table></td></tr>
+            <tr width="100%">
+                <td><p class="portfoliotext">Click the image to see more...</h3></td>
+            </tr>
+        </table>
+    </div>
+    <div id="portfoliosection_thelittlemermaiddiv" class="portfoliosection">
+        <table width="100%">
+            <tr width="100%">
+                <td><h3>The Little Mermaid 🧜‍♀️</h3></td>
+            </tr>
+            <tr><td><table><tr><td><table><tr>
+                                        <td><h3 class="portfoliodate">April 2025</h3></td>
+                                    </tr>
+                                    <tr>
+                                        <td><image onclick="changeimage_thelittlemermaid()" class="portfolioimage" src="thelittlemermaid1.png" id="image_thelittlemermaid"></image></td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>
+                                <p class="portfoliotext">Collaboratively designed lighting for The Little Mermaid Jr.  Ran lights for show on Avolites Tiger Touch II.  Communication and team work are critical for any event and I enjoyed working with the Young Tech team to produce this show.</p>
+                            </td>
+                        </tr></table></td></tr>
+            <tr width="100%">
+                <td><p class="portfoliotext">Click the image to see more...</h3></td>
+            </tr>
+        </table>
+    </div>
+    <div id="portfoliosection_aladdinonicediv" class="portfoliosection">
+        <table width="100%">
+            <tr width="100%">
+                <td><h3>Aladdin On Ice ❄️</h3></td>
+            </tr>
+            <tr><td><table><tr><td><table><tr>
+                                        <td><h3 class="portfoliodate">December 2024</h3></td>
+                                    </tr>
+                                    <tr>
+                                        <td><image class="portfolioimage" src="placeholderimagetext.png"></image></td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>
+                                <p class="portfoliotext">Worked with professional team to run Aladdin On Ice at local ice rink.  Controlled a spot light to highlight performers.</p>
+                            </td>
+                        </tr></table></td></tr>
+        </table>
+    </div>
+    <div id="portfoliosection_christmas2023div" class="portfoliosection">
+        <table width="100%">
+            <tr width="100%">
+                <td><h3>Christmas Talent Show</h3></td>
+            </tr>
+            <tr><td><table><tr><td><table><tr>
+                                        <td><h3 class="portfoliodate">December 2023</h3></td>
+                                    </tr>
+                                    <tr>
+                                        <td><image class="portfolioimage" src="placeholderimagetext.png"></image></td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>
+                                <p class="portfoliotext">Pre-programmed and ran lights on an Avolites Tiger Touch II for school Christmas show.</p>
+                            </td>
+                        </tr></table></td></tr>
+        </table>
+    </div>
+    <script>
+        var imageindex_liveeventsworkshop = 1;
+        function changeimage_liveeventsworkshop() {
+            if (imageindex_liveeventsworkshop == 0) {
+                document.getElementById("image_liveeventsworkshop").src = "liveeventsworkshop1.png";
+            };
+            if (imageindex_liveeventsworkshop == 1) {
+                document.getElementById("image_liveeventsworkshop").src = "liveeventsworkshop2.png";
+            };
+            if (imageindex_liveeventsworkshop == 2) {
+                document.getElementById("image_liveeventsworkshop").src = "liveeventsworkshop3.png";
+            };
+            imageindex_liveeventsworkshop = imageindex_liveeventsworkshop + 1;
+            if (imageindex_liveeventsworkshop >= 3) {
+                imageindex_liveeventsworkshop = 0;
+            };
+        };
+        var imageindex_thelittlemermaid = 1;
+        function changeimage_thelittlemermaid() {
+            if (imageindex_thelittlemermaid == 0) {
+                document.getElementById("image_thelittlemermaid").src = "thelittlemermaid1.png";
+            };
+            if (imageindex_thelittlemermaid == 1) {
+                document.getElementById("image_thelittlemermaid").src = "thelittlemermaid2.jpg";
+            };
+            if (imageindex_thelittlemermaid == 2) {
+                document.getElementById("image_thelittlemermaid").src = "thelittlemermaid3.jpg";
+            };
+            imageindex_thelittlemermaid = imageindex_thelittlemermaid + 1;
+            if (imageindex_thelittlemermaid >= 3) {
+                imageindex_thelittlemermaid = 0;
+            };
+        };
+        var portfoliosection_liveeventsworkshop = 0;
+        var portfoliosection_thelittlemermaid = 0;
+        var portfoliosection_AladdinOnIce = 0;
+        var portfoliosection_christmas2023 = 0;
+        function update_portfolio_sections() {
+            if ((document.getElementById("portfoliosection_liveeventsworkshopdiv").getBoundingClientRect().top) < window.innerHeight - 100) {
+                if (portfoliosection_liveeventsworkshop < 100) {
+                    portfoliosection_liveeventsworkshop = portfoliosection_liveeventsworkshop + 1;
+                };
+            }
+            else {
+                portfoliosection_liveeventsworkshop = 0;
+            };
+            if ((document.getElementById("portfoliosection_thelittlemermaiddiv").getBoundingClientRect().top) < window.innerHeight - 100) {
+                if (portfoliosection_thelittlemermaid < 100) {
+                    portfoliosection_thelittlemermaid = portfoliosection_thelittlemermaid + 1;
+                };
+            }
+            else {
+                portfoliosection_thelittlemermaid = 0;
+            };
+            if ((document.getElementById("portfoliosection_aladdinonicediv").getBoundingClientRect().top) < window.innerHeight - 100) {
+                if (portfoliosection_AladdinOnIce < 100) {
+                    portfoliosection_AladdinOnIce = portfoliosection_AladdinOnIce + 1;
+                };
+            }
+            else {
+                portfoliosection_AladdinOnIce = 0;
+            };
+            if ((document.getElementById("portfoliosection_christmas2023div").getBoundingClientRect().top) < window.innerHeight - 100) {
+                if (portfoliosection_christmas2023 < 100) {
+                    portfoliosection_christmas2023 = portfoliosection_christmas2023 + 1;
+                };
+            }
+            else {
+                portfoliosection_christmas2023 = 0;
+            };
+            document.getElementById("portfoliosection_liveeventsworkshopdiv").style.opacity = portfoliosection_liveeventsworkshop + "%";
+            document.getElementById("portfoliosection_thelittlemermaiddiv").style.opacity = portfoliosection_thelittlemermaid + "%";
+            document.getElementById("portfoliosection_aladdinonicediv").style.opacity = portfoliosection_AladdinOnIce + "%";
+            document.getElementById("portfoliosection_christmas2023div").style.opacity = portfoliosection_christmas2023 + "%";
+            setTimeout(update_portfolio_sections, 10);
+        };
+        update_portfolio_sections();
+    </script>
+    </body>
+    <footer>
+        <iframe src="footerpage.html" style="border: none" width="100%" height="250px"></iframe>
+    </footer>
+</html>
