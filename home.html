@@ -1,5 +1,17 @@
 <html>
-    <link rel="stylesheet" href="style.css">
+    <link id="stylesheetmain" rel="stylesheet" href="stylephone.css">
+    <script>
+        function update_stylesheet() {
+            if (window.innerWidth <= window.innerHeight) {
+                document.getElementById("stylesheetmain").href = "stylephone.css";
+            };
+            if (window.innerWidth > window.innerHeight) {
+                document.getElementById("stylesheetmain").href = "style.css";
+            };
+            setTimeout(update_stylesheet, 10);
+        };
+        update_stylesheet();
+    </script>
     <head>
         <title>MurrayLD - Home</title>
     </head>
