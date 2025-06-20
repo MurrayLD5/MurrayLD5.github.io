@@ -423,3 +423,11 @@ h3 {color: rgb(255, 0, 0);
     margin-top: 200px;
     padding: 50px;
 }
+
+.footertext {
+    color: white;
+    font-family: Franklin Gothic;
+    font-size: 16;
+    padding-left: 25px;
+    text-align: left;
+}
