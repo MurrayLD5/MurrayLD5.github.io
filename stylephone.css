@@ -69,7 +69,7 @@ h1:hover {
 }
 
 #topclip {
-    scale: 1.8;
+    visibility: visible;
 }
 
 #welcometext {

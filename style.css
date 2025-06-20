@@ -68,6 +68,10 @@ h1:hover {
     left: 0px;
 }
 
+#topclip {
+    width: 101%;
+}
+
 #welcometext {
     color: white;
     font-family: Franklin Gothic;
