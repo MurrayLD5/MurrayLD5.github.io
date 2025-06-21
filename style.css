@@ -94,7 +94,8 @@ h1:hover {
     cursor: grab;
 }
 
-div {margin-top: 105px;
+div {
+    margin-top: 105px;
     margin-bottom: 105px;
 }
 
@@ -434,4 +435,9 @@ h3 {color: rgb(255, 0, 0);
     font-size: 16;
     padding-left: 25px;
     text-align: left;
+}
+
+#examplevideo {
+    max-width: 600px;
+    margin: auto;
 }
