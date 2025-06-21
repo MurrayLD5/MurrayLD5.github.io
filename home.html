@@ -21,7 +21,7 @@
             <h3 id="welcomesubtext">Welcome to my website</h3>
         </div>
         <div id="about">
-            <p id="abouttext">Aspiring lighting designer based in Peterborough, England.</p>
+            <center><video src="Top Video.mp4" width="500px" autoplay muted></video></center>
         </div>
         <div id="softwareiuse">
             <p>Software I use:</p>
@@ -46,12 +46,18 @@
                 </tr>
             </table></center>
         </div>
+        <div id="examplevideodiv">
+            <p>Example video: Espresso Macchiato</p>
+            <center><video id="examplevideo" src="examplevideo.mp4" controls poster="examplevideoposter.png"></video></center>
+            <center><a href="https://www.youtube.com/watch?v=P_-bJrnKDIY" target="_blank" style="text-decoration: none"><h1 class="linkbox">Watch on YouTube</h1></a></center>
+        </div>
         <script>
             document.getElementById("topclip").currentTime = Math.floor(Math.random() * 19);;
             //document.getElementById("topclip").play();
             var opacity_about = 0;
             var opacity_softwareiuse = 0;
             var opacity_companiesiworkwith = 0;
+            var opacity_examplevideo = 0;
             function update_opacity() {
                 if ((document.getElementById("about").getBoundingClientRect().top) < window.innerHeight) {
                     if (opacity_about < 100) {
@@ -77,9 +83,18 @@
                 else {
                     opacity_companiesiworkwith = 0;
                 };
+                if ((document.getElementById("examplevideodiv").getBoundingClientRect().top) < window.innerHeight) {
+                    if (opacity_examplevideo < 100) {
+                        opacity_examplevideo = opacity_examplevideo + 1;
+                    };
+                }
+                else {
+                    opacity_examplevideo = 0;
+                };
                 document.getElementById("about").style.opacity = opacity_about + "%";
                 document.getElementById("softwareiuse").style.opacity = opacity_softwareiuse + "%";
                 document.getElementById("companiesiworkwith").style.opacity = opacity_companiesiworkwith + "%";
+                document.getElementById("examplevideodiv").style.opacity = opacity_examplevideo + "%";
                 setTimeout(update_opacity, 10);
             }
             update_opacity();
