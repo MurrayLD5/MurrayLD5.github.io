@@ -1,6 +1,19 @@
 <html>
-    <link rel="stylesheet" href="style.css">
-    <body style="background-color: rgb(50, 50, 50)">
+    <link id="stylesheetmain" rel="stylesheet" href="stylephone.css">
+    <script>
+        function update_stylesheet() {
+            if (window.outerWidth <= window.outerHeight) {
+                document.getElementById("stylesheetmain").href = "stylephone.css";
+                console.log("PHONE");
+            };
+            if (window.outerWidth > window.outerHeight) {
+                document.getElementById("stylesheetmain").href = "style.css";
+                console.log("NORMAL");
+            };
+        };
+        update_stylesheet();
+    </script>
+    <body style="background-color: rgb(50, 50, 50); overflow-y: hidden">
         <table width="100%">
             <tr width="100%">
                 <td width="25%">

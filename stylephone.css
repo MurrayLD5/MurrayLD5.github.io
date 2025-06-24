@@ -1,4 +1,5 @@
 body {background-color: black;
+    overflow-x: hidden;
 }
 
 body::selection {background-color: rgba(255, 0, 0, .3)}
@@ -17,19 +18,20 @@ body::selection {background-color: rgba(255, 0, 0, .3)}
     padding-top: 0px;
     padding-left: 10px;
     rotate: 0deg;
-    scale: 1;
+    scale: 1.5;
     transition-duration: .5s;
 }
 
 #toplogo:hover {rotate: -5deg;
-    scale: 1.1;
+    scale: 1.8;
     transition-duration: .5s;
 }
 
 .linkbox {width:33%;
-    padding-top: 20px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-top: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    scale: 1.5;
 }
 
 h1 {color: rgb(255, 0, 0);
@@ -54,8 +56,17 @@ h1:hover {
     /*padding-top: 0px;
     padding-bottom: 20px;*/
     filter: blur(0px);
-    scale: 1.1;
-    border-radius: 15px;
+    scale: 1;
+    transition-duration: .25s;
+}
+
+h1:active {
+    color: rgb(255, 100, 0);
+    background-color: rgb(255, 0, 0);
+    /*padding-top: 0px;
+    padding-bottom: 20px;*/
+    filter: blur(0px);
+    scale: 1;
     transition-duration: .25s;
 }
 
@@ -70,6 +81,7 @@ h1:hover {
 
 #topclip {
     visibility: visible;
+    scale: 1.9;
 }
 
 #welcometext {
@@ -178,9 +190,10 @@ footer {
 
 /**/
 
-.sociallogo {height: 50px;
+.sociallogo {
+    height: 50px;
     align-self: center;
-    padding-top: 10px;
+    padding-top: 50px;
     padding-bottom: 10px;
     padding-left: 25px;
     cursor: hand;
@@ -189,13 +202,15 @@ footer {
     opacity: 0%;
     animation: flyUp 0.5s ease-out forwards;
     position: relative;
+    scale: 3;
     transition-duration: .5s}
 
-.sociallogo:hover {scale: 1.1;
-    padding-top: 0px;
+.sociallogo:hover {
+    padding-top: 40px;
     padding-bottom: 20px;
     filter: brightness(100%);
     rotate: -10deg;
+    scale: 3.5;
     transition-duration: .5s
 }
 
@@ -282,8 +297,8 @@ button:hover {
     color: white;
     background-color: rgba(24, 118, 242, 0.3);
     font-family: Franklin Gothic;
-    font-size: 25;
-    padding: 25px;
+    font-size: 80;
+    padding: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
     border: solid;
@@ -293,7 +308,7 @@ button:hover {
     border-radius: 5px;
     letter-spacing: normal;
     margin-top: 50px;
-    width: 450px;
+    width: 80%;
     transition-duration: .5s;
 }
 
@@ -422,9 +437,9 @@ h3 {color: rgb(255, 0, 0);
 }
 
 .footertext {
-    color: blue;
+    color: white;
     font-family: Franklin Gothic;
-    font-size: 16;
+    font-size: 50;
     padding-left: 25px;
     text-align: left;
 }
