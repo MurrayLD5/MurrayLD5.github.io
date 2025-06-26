@@ -1,16 +1,5 @@
 <html>
     <link id="stylesheetmain" rel="stylesheet" href="stylephone.css">
-    <script>
-        function update_stylesheet() {
-            if (window.innerWidth <= window.innerHeight) {
-                document.getElementById("stylesheetmain").href = "stylephone.css";
-            };
-            if (window.innerWidth > window.innerHeight) {
-                document.getElementById("stylesheetmain").href = "style.css";
-            };
-        };
-        update_stylesheet();
-    </script>
     <head>
         <title>MurrayLD - 404 Page Not Found</title>
     </head>
@@ -28,6 +17,18 @@
     </div>
     </body>
     <footer>
-        <iframe src="footerpage.html" style="border: none" width="100%" height="250px"></iframe>
+        <iframe id="footerpage" src="footerpage.html" style="border: none; height: 250px" width="100%"></iframe>
     </footer>
+    <script>
+        function update_stylesheet() {
+            if (window.innerWidth <= window.innerHeight) {
+                document.getElementById("stylesheetmain").href = "stylephone.css";
+                document.getElementById("footerpage").style.height = "400px";
+            };
+            if (window.innerWidth > window.innerHeight) {
+                document.getElementById("stylesheetmain").href = "style.css";
+            };
+        };
+        update_stylesheet();
+    </script>
 </html>

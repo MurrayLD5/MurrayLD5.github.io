@@ -195,22 +195,22 @@ footer {
     align-self: center;
     padding-top: 50px;
     padding-bottom: 10px;
-    padding-left: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
     cursor: hand;
     filter: brightness(50%);
     rotate: 0deg;
     opacity: 0%;
     animation: flyUp 0.5s ease-out forwards;
     position: relative;
-    scale: 3;
+    scale: 2.1;
     transition-duration: .5s}
 
 .sociallogo:hover {
     padding-top: 40px;
     padding-bottom: 20px;
     filter: brightness(100%);
-    rotate: -10deg;
-    scale: 3.5;
+    scale: 2.5;
     transition-duration: .5s
 }
 
@@ -439,7 +439,7 @@ h3 {color: rgb(255, 0, 0);
 .footertext {
     color: white;
     font-family: Franklin Gothic;
-    font-size: 50;
+    font-size: 25;
     padding-left: 25px;
     text-align: left;
 }
