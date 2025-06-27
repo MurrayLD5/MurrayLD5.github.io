@@ -463,3 +463,21 @@ h3 {color: rgb(255, 0, 0);
     opacity: 100%;
     transition-duration: .3s;
 }
+
+.textlink {
+    color: white;
+    font-family: Franklin Gothic;
+    font-size: 32;
+    padding-left: 25px;
+    text-align: center;
+    letter-spacing: 0px;
+    scale: 1;
+    transition-duration: .5s;
+}
+
+.textlink:hover {
+    color: red;
+    letter-spacing: 5px;
+    scale: 1.1;
+    transition-duration: .5s;
+}
