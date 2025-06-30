@@ -82,6 +82,15 @@
                 setTimeout(update_opacity, 10);
             }
             update_opacity();
+            function update_background() {
+                if (window.innerWidth <= window.innerHeight) {
+                    document.getElementById("backgroundvideo").style.width = window.innerHeight;
+                };
+                if (window.innerWidth > window.innerHeight) {
+                    document.getElementById("backgroundvideo").style.width = window.innerWidth;
+                };
+            }
+            update_background();
         </script>
     <script>
         document.getElementById("contactmeshortcut").style.top = window.innerHeight - 100;

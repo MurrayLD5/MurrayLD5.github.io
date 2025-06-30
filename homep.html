@@ -66,6 +66,12 @@
                 document.getElementById("about").style.opacity = opacity_about + "%";
                 document.getElementById("softwareiuse").style.opacity = opacity_softwareiuse + "%";
                 document.getElementById("companiesiworkwith").style.opacity = opacity_companiesiworkwith + "%";
+                if (window.innerWidth <= window.innerHeight) {
+                    document.getElementById("backgroundvideo").style.width = window.innerHeight;
+                };
+                if (window.innerWidth > window.innerHeight) {
+                    document.getElementById("backgroundvideo").style.width = window.innerWidth;
+                };
                 setTimeout(update_opacity, 10);
             }
             update_opacity();

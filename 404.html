@@ -31,5 +31,14 @@
             };
         };
         update_stylesheet();
+        function update_background() {
+            if (window.innerWidth <= window.innerHeight) {
+                document.getElementById("backgroundvideo").style.width = window.innerHeight;
+            };
+            if (window.innerWidth > window.innerHeight) {
+                document.getElementById("backgroundvideo").style.width = window.innerWidth;
+            };
+        }
+        update_background();
     </script>
 </html>
