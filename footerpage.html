@@ -1,0 +1,39 @@
+<html>
+    <link id="stylesheetmain" rel="stylesheet" href="styles/stylephone.css">
+    <script>
+        function update_stylesheet() {
+            if (window.outerWidth <= window.outerHeight) {
+                document.getElementById("stylesheetmain").href = "styles/stylephone.css";
+                console.log("PHONE");
+            };
+            if (window.outerWidth > window.outerHeight) {
+                document.getElementById("stylesheetmain").href = "styles/style.css";
+                console.log("NORMAL");
+            };
+        };
+        update_stylesheet();
+    </script>
+    <body style="background-color: rgb(10, 10, 10)">
+        <image src="images/footer/footerimage.jpg" width="100%" height="100%" style="position: fixed; top: 0px; left: 0px; z-index: -5"></image>
+        <table width="100%">
+            <!--<td><a href="contact.html" target="_top" style="text-decoration: none; margin-right: 100px;" width="33%"><h1>Contact</h1></a></td></tr>-->
+        </table>
+        <table>
+            <tr><td><p class="footertext">Socials:</p></td></tr>
+            <tr>
+                <td><a href="https://www.facebook.com/profile.php?id=61575256640120" target="_blank"><image class="sociallogo" src="images/socials/facebooklogo.png" style="animation-delay: 0s"></image></a></td>
+                <td><a href="https://www.youtube.com/@MurrayLD5" target="_blank"><image class="sociallogo" src="images/socials/youtubelogo.png" style="animation-delay: .1s"></image></a></td>
+                <td><a href="https://about.instagram.com/" target="_blank"><image class="sociallogo" src="images/socials/instalogo.png" style="animation-delay: .4s"></image></a></td>
+                <!--<td><a href="https://www.microsoft.com/" target="_blank"><image class="sociallogo" src="outlooklogo.png" style="animation-delay: .2s"></image></a></td>
+                <td><a href="https://www.whatsapp.com/" target="_blank"><image class="sociallogo" src="whatsapplogo.png" style="animation-delay: .3s"></image></a></td>
+                <td><a href="https://discord.com/" target="_blank"><image class="sociallogo" src="discordlogo.png" style="animation-delay: .5s"></image></a></td>-->
+            </tr>
+        </table>
+        <!--<center><table width="50%"><tr>
+            <center><td><a href="home.html" style="text-decoration: none"><p class="textlink">Home</p></a></td></center>
+            <center><td><a href="portfolio.html" style="text-decoration: none"><p class="textlink">Portfolio</p></a></td></center>
+            <center><td><a href="contact.html" style="text-decoration: none"><p class="textlink">Contact</p></a></td></center>
+        </tr></table></center>-->
+        <center><p class="footertext" width="100%" style="text-align: center; padding-top: 50px">© MurrayLD 2025</p></center>
+    </body>
+</html>

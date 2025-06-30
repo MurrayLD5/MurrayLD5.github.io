@@ -1,0 +1,47 @@
+<html>
+    <link id="stylesheetmain" rel="stylesheet" href="styles/stylephone.css">
+    <head>
+        <title>MurrayLD - Contact</title>
+    </head>
+    <header class="banner">
+        <iframe src="headerpage.html" width="100%" height="125px" style="border: none"></iframe>
+    </header>
+    <body>
+        <video id="backgroundvideo" src="videos/Background Video.mp4" style="z-index: -10; position: fixed; top: 0px; left: 0px; opacity: 50%" autoplay muted loop></video>
+        <div class="pagetitletextdiv">
+            <p class="pagetitletext">Contact me</p>
+        </div>
+        <div>
+            <a href="https://www.facebook.com/profile.php?id=61575256640120" target="_blank"><h1 id="instabutton">Message me on Instagram</h1></a>
+            <!--<center><button id="obutton">Email me</button></center>
+            <center><button id="wbutton">Message me on WhatsApp</button></center>
+            <p>Or use my other socials...</p>
+            <center><table width="80%">
+                <tr>
+                    <td><a href="https://www.facebook.com/profile.php?id=61575256640120" target="_blank"><image class="sociallogobg" src="facebooklogo.png" style="animation-delay: 0s"></image></a></td>
+                    <td><a href="https://www.youtube.com/@MurrayLD5" target="_blank"><image class="sociallogobg" src="youtubelogo.png" style="animation-delay: .1s"></image></a></td>
+                    <td><a href="https://www.microsoft.com/" target="_blank"><image class="sociallogobgny" src="outlooklogo.png" style="animation-delay: .2s"></image></a></td>
+                    <td><a href="https://www.whatsapp.com/" target="_blank"><image class="sociallogobgny" src="whatsapplogo.png" style="animation-delay: .3s"></image></a></td>
+                    <td><a href="https://about.instagram.com/" target="_blank"><image class="sociallogobgny" src="instalogo.png" style="animation-delay: .4s"></image></a></td>
+                    <td><a href="https://discord.com/" target="_blank"><image class="sociallogobgny" src="discordlogo.png" style="animation-delay: .5s"></image></a></td>
+                </tr>
+            </table></center>
+            <p style="font-size: 20; margin-top: 100px">*I do not use Outlook, WhatsApp, Instagram or Discord for communication at the moment.</p>-->
+        </div>
+    </body>
+    <footer>
+        <iframe id="footerpage" src="footerpage.html" style="border: none; height: 250px" width="100%"></iframe>
+    </footer>
+    <script>
+        function update_stylesheet() {
+            if (window.innerWidth <= window.innerHeight) {
+                document.getElementById("stylesheetmain").href = "styles/stylephone.css";
+                document.getElementById("footerpage").style.height = "400px";
+            };
+            if (window.innerWidth > window.innerHeight) {
+                document.getElementById("stylesheetmain").href = "styles/style.css";
+            };
+        };
+        update_stylesheet();
+    </script>
+</html>
