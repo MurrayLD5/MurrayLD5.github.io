@@ -1,35 +1,36 @@
 <html>
     <link id="stylesheetmain" rel="stylesheet" href="styles/stylephone.css">
+    </script>
     <head>
         <title>MurrayLD - Home</title>
     </head>
     <header class="banner">
         <iframe src="headerpage.html" width="100%" height="125px" style="border: none"></iframe>
     </header>
-    <body style="overflow-x: hidden">
+    <body>
         <div id="welcome">
-            <video src="videos/Top Text.mp4" autoplay muted width="100%"></video>
+            <video src="videos/Top Text.mp4" autoplay muted width="200%" style="margin-left: -380"></video>
         </div>
-        <div id="about">
+        <div id="about" style="background-image: url('images/breakimages/break1.png')">
             <p id="subtext">Aspiring lighting designer</p>
         </div>
-        <div id="softwareiuse">
+        <div id="softwareiuse" style="background-image: url('images/breakimages/break2.png')">
             <p>Software I use:</p>
             <center><table width="50%">
-                    <tr width="100%" style="margin: auto"><td><center><a href="https://www.avolites.com/" target="_blank"><image class="softwareiuselogo" src="images/logos/logoavolites.jpg"></image></a></center></td></tr>
-                    <tr width="100%" style="margin: auto"><td><center><a href="https://www.blender.org/" target="_blank"><image class="softwareiuselogo2" src="images/logos/logoblender.jpg"></image></a></center></td></tr>
-                    <tr width="100%" style="margin: auto"><td><center><a href="https://www.capture.se/" target="_blank"><image class="softwareiuselogo" src="images/logos/logocapture.jpg"></image></a></center></td></tr>
-                    <tr width="100%" style="margin: auto"><td><center><a href="https://chamsyslighting.com/" target="_blank"><image class="softwareiuselogo2" src="images/logos/logochamsys.jpg"></image></a></center></td></tr>
-                    <tr width="100%" style="margin: auto"><td><center><a href="https://www.gimp.org/" target="_blank"><image class="softwareiuselogo" src="images/logos/logogimp.jpg"></image></a></center></td></tr>
+                    <tr width="100%" style="margin: auto"><td><center><a href="https://www.avolites.com/" target="_blank"><image class="softwareiuselogo" src="images/logos/logoavolites.png"></image></a></center></td></tr>
+                    <tr width="100%" style="margin: auto"><td><center><a href="https://www.blender.org/" target="_blank"><image class="softwareiuselogo2" src="images/logos/logoblender.png"></image></a></center></td></tr>
+                    <tr width="100%" style="margin: auto"><td><center><a href="https://www.capture.se/" target="_blank"><image class="softwareiuselogo" src="images/logos/logocapture.png"></image></a></center></td></tr>
+                    <tr width="100%" style="margin: auto"><td><center><a href="https://chamsyslighting.com/" target="_blank"><image class="softwareiuselogo2" src="images/logos/logochamsys.png"></image></a></center></td></tr>
+                    <tr width="100%" style="margin: auto"><td><center><a href="https://www.gimp.org/" target="_blank"><image class="softwareiuselogo" src="images/logos/logogimp.png"></image></a></center></td></tr>
             </table></center>
         </div>
-        <div id="companiesiworkwith">
+        <div id="companiesiworkwith" style="background-image: url('images/breakimages/break4.png')">
             <p>Companies I work with:</p>
             <center><table width="50%">
-                    <tr width="100%" style="margin: auto"><td><center><a href="https://limelight-academy.co.uk/" target="_blank"><image class="softwareiuselogo" src="images/logos/logolapa.jpg"></image></a></center></td></tr>
-                    <tr width="100%" style="margin: auto"><td><center><a href="https://medusalive.co.uk/" target="_blank"><image class="softwareiuselogo2" src="images/logos/mllogo.jpg"></image></a></center></td></tr>
+                    <tr width="100%" style="margin: auto"><td><center><a href="https://limelight-academy.co.uk/" target="_blank"><image class="softwareiuselogo" src="images/logos/logolapa.png"></image></a></center></td></tr>
+                    <tr width="100%" style="margin: auto"><td><center><a href="https://medusalive.co.uk/" target="_blank"><image class="softwareiuselogo2" src="images/logos/mllogo.png"></image></a></center></td></tr>
                     <tr width="100%" style="margin: auto"><td><center><a href="https://www.phantomliveevents.co.uk/" target="_blank"><image class="softwareiuselogo" src="images/logos/logople.png"></image></a></center></td></tr>
-                    <tr width="100%" style="margin: auto"><td><center><a href="https://youngtechacademy.co.uk/" target="_blank"><image class="softwareiuselogo2" src="images/logos/ytlogo.jpg"></image></a></center></td></tr>
+                    <tr width="100%" style="margin: auto"><td><center><a href="https://youngtechacademy.co.uk/" target="_blank"><image class="softwareiuselogo2" src="images/logos/ytlogo.png"></image></a></center></td></tr>
             </table></center>
         </div>
         <script>
@@ -66,18 +67,25 @@
                 document.getElementById("about").style.opacity = opacity_about + "%";
                 document.getElementById("softwareiuse").style.opacity = opacity_softwareiuse + "%";
                 document.getElementById("companiesiworkwith").style.opacity = opacity_companiesiworkwith + "%";
+                setTimeout(update_opacity, 10);
+            }
+            update_opacity();
+            function update_background() {
                 if (window.innerWidth <= window.innerHeight) {
                     document.getElementById("backgroundvideo").style.width = window.innerHeight;
                 };
                 if (window.innerWidth > window.innerHeight) {
                     document.getElementById("backgroundvideo").style.width = window.innerWidth;
                 };
-                setTimeout(update_opacity, 10);
             }
-            update_opacity();
+            update_background();
         </script>
+    <script>
+        document.getElementById("contactmeshortcut").style.top = window.innerHeight - 100;
+        document.getElementById("contactmeshortcut").style.left = window.innerWidth - 115;
+    </script>
     </body>
     <footer>
-        <iframe id="footerpage" src="footerpage.html" style="border: none; height: 400px" width="100%"></iframe>
+        <iframe id="footerpage" src="footerpage.html" style="border: none; height: 250px" width="100%"></iframe>
     </footer>
 </html>
