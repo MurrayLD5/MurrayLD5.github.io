@@ -14,19 +14,20 @@ body::selection {background-color: rgba(255, 0, 0, .3)}
     margin: 0px;
     backdrop-filter: blur(5px);
     z-index: 3;
+    transition-duration: 1s;
 }
 
 #toplogo {height: 40px;
-    padding-top: 0px;
+    padding-top: 5px;
+    padding-bottom: 0px;
     padding-left: 10px;
-    rotate: 0deg;
-    scale: 1.5;
-    transition-duration: .5s;
+    z-index: 5;
+    transition-duration: .3s;
 }
 
-#toplogo:hover {rotate: -5deg;
-    scale: 1.8;
-    transition-duration: .5s;
+#toplogo:hover {
+    padding-top: 0px;
+    padding-bottom: 5px;
 }
 
 .linkbox {width:33%;
@@ -35,33 +36,21 @@ body::selection {background-color: rgba(255, 0, 0, .3)}
     padding-right: 25px;
 }
 
-h1 {color: rgb(255, 0, 0);
+h1 {color: rgb(255, 255, 255);
     background-color: transparent;
     font-family: Franklin Gothic;
-    scale: 1.5;
+    font-size: 45;
     text-decoration: none;
-    cursor: hand;
-    text-align: auto;
-    letter-spacing: normal;
-    margin: 10px;
     font-weight: normal;
-    transition-duration: .5s;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    transition-duration: .3s;
 }
 
 h1:hover {
-    color: rgb(255, 100, 0);
-    transform: scalex(1.2);
-    transition-duration: .25s;
-}
-
-h1:active {
-    color: rgb(255, 100, 0);
-    background-color: rgb(255, 0, 0);
-    /*padding-top: 0px;
-    padding-bottom: 20px;*/
-    filter: blur(0px);
-    scale: 1;
-    transition-duration: .25s;
+    color: rgb(175, 0, 0);
+    padding-top: 0px;
+    padding-bottom: 5px;
 }
 
 /**/
@@ -73,30 +62,42 @@ h1:active {
     left: 0px;
 }
 
-#welcometext {
+#topclip {
+    width: 100%;
+    transform: scalex(300%);
+    /*transform: scaleY(.5);*/
+}
+
+#infoclip {
+    width: 50%;
+    margin-left: 25%;
+}
+
+#titletext {
     color: white;
     font-family: Franklin Gothic;
     font-size: 100;
-    position: absolute;
-    top: 30px;
-    width: 95%;
-    text-align: center;
+    margin: auto;
     cursor: grab;
+    padding-top: 100px;
+    z-index: 4;
 }
 
-#welcomesubtext {
+#subtext {
     color: white;
     font-family: Franklin Gothic;
-    font-size: 30;
-    position: absolute;
-    top: 225px;
-    width: 95%;
+    font-size: 50;
+    width: 100%;
     text-align: center;
-    cursor: grab;
 }
 
-div {margin-top: 105px;
-    margin-bottom: 105px;
+div {
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    background-color: none;
+    width: 80%;
+    padding: 10px;
 }
 
 /**/
@@ -108,9 +109,10 @@ div {margin-top: 105px;
 p {
     color: white;
     font-family: Franklin Gothic;
-    font-size: 60;
+    font-size: 45;
     text-align: center;
     font-weight: 500;
+    margin-top: 0px;
 }
 
 p::selection {
@@ -119,7 +121,6 @@ p::selection {
 }
 
 #abouttext {
-    margin-top: 100px;
     opacity: 100%;
 }
 
@@ -129,33 +130,31 @@ p::selection {
     opacity: 0%;
 }
 
-.softwareiuselogo {opacity: 50%;
+.softwareiuselogo {opacity: 100%;
     cursor: hand;
-    min-height: 200px;
     max-width: 100%;
+    min-height: 150px;
     padding: 10px;
-    rotate: 0deg;
-    scale: 1;
-    transition-duration: .5s}
+    padding-top: 5px;
+    padding-bottom: 0px;
+    transition-duration: .3s}
 
 .softwareiuselogo:hover {opacity: 100%;
-    rotate: -5deg;
-    scale: 1.1;
-    transition-duration: .5s}
+    padding-top: 0px;
+    padding-bottom: 5px;}
     
-.softwareiuselogo2 {opacity: 50%;
+.softwareiuselogo2 {opacity: 100%;
     cursor: hand;
-    min-height: 200px;
     max-width: 100%;
+    min-height: 150px;
     padding: 10px;
-    rotate: 0deg;
-    scale: 1;
-    transition-duration: .5s}
+    padding-top: 5px;
+    padding-bottom: 0px;
+    transition-duration: .3s}
 
 .softwareiuselogo2:hover {opacity: 100%;
-    rotate: 5deg;
-    scale: 1.1;
-    transition-duration: .5s}
+    padding-top: 0px;
+    padding-bottom: 5px;}
 
 /**/
 
@@ -167,49 +166,30 @@ h5 {
     padding-top: 25px;
 }
 
-footer {
+#footerpage {
     background-color: rgb(10, 10, 10);
     margin-left: -8px;
     width: 101%;
-    height: 100px;
+    min-height: 300px;
     margin-bottom: -8px;
+    overflow-y: hidden;
 }
 
 /**/
 
-.sociallogo {
-    height: 50px;
+.sociallogo {height: 100px;
     align-self: center;
-    padding-top: 50px;
-    padding-bottom: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    padding-left: 25px;
     cursor: hand;
     filter: brightness(50%);
-    rotate: 0deg;
-    opacity: 0%;
-    animation: flyUp 0.5s ease-out forwards;
-    position: relative;
-    scale: 2.1;
-    transition-duration: .5s}
+    transition-duration: .3s}
 
 .sociallogo:hover {
-    padding-top: 40px;
-    padding-bottom: 20px;
+    padding-top: 0px;
+    padding-bottom: 5px;
     filter: brightness(100%);
-    scale: 2.5;
-    transition-duration: .5s
-}
-
-@keyframes flyUp {
-    from {
-        transform: translateY(300px);
-        opacity: 0%;
-    }
-    to {
-        transform: translateY(0px);
-        opacity: 100%;
-    }
 }
 
 .sociallogobg {height: 100px;
@@ -217,20 +197,12 @@ footer {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 25px;
-    cursor: hand;
-    filter: brightness(50%);
-    rotate: 0deg;
-    scale: 1;
-    filter: grayscale(100%);
-    transition-duration: .5s}
+    transition-duration: .3s}
 
 .sociallogobg:hover {scale: 1.1;
     padding-bottom: 10px;
     padding-left: 25px;
     filter: brightness(100%);
-    scale: 1.25;
-    filter: grayscale(0%);
-    transition-duration: .5s
 }
 
 .sociallogobgny {height: 100px;
@@ -280,33 +252,25 @@ button:hover {
     transition-duration: .5s;
 }
 
-#fbbutton {
-    color: white;
-    background-color: rgba(24, 118, 242, 0.3);
+#instabutton {color: white;
+    background-color: none;
     font-family: Franklin Gothic;
-    font-size: 80;
-    padding: 0px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: solid;
-    border-color: #1877F2;
-    border-width: 3px;
-    cursor: hand;
-    border-radius: 5px;
-    letter-spacing: normal;
-    margin-top: 50px;
-    width: 80%;
-    transition-duration: .5s;
+    font-size: 35;
+    text-decoration: none;
+    font-weight: normal;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    transition-duration: .3s;
 }
 
-#fbbutton:hover {
-    color: white;
-    background-color: rgba(24, 118, 242, 0.5);
-    border-color: rgba(24, 118, 242, 0);
-    letter-spacing: 1px;
-    transition-duration: .5s;
+#instabutton:hover {
+    color: rgb(255, 0, 255);
+    padding-top: 0px;
+    padding-bottom: 5px;
 }
-
 #obutton {
     color: white;
     background-color: rgba(40, 168, 234, .3);
@@ -372,7 +336,19 @@ button:hover {
 }
 
 .portfoliosection {background-color: rgb(25, 25, 25);
+    width: 90%;
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-top: 100px;
+    border-radius: 17px;/*35px;*/
+    margin-bottom: 100px;
+    transition: background-color 0.5s ease;
+}
+
+.portfoliosectionphone {background-color: rgb(25, 25, 25);
     width: 100%;
+    margin: auto;
     padding-top: 25px;
     padding-bottom: 25px;
     margin-top: 100px;
@@ -380,18 +356,18 @@ button:hover {
     margin-bottom: 100px;
 }
 
-h3 {color: rgb(255, 0, 0);
+h3 {color: rgb(175, 0, 0);
     font-family: Franklin Gothic;
-    font-size: 45;
+    font-size: 40;
     text-decoration: none;
-    text-align: left;
+    text-align: center;
     padding-left: 25px;
     transition-duration: .5s;
 }
 
 .portfolioimage {
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 300px;
     padding: 10px;
     scale: 1;
     rotate: 0deg;
@@ -400,7 +376,7 @@ h3 {color: rgb(255, 0, 0);
 }
 
 .portfolioimage:hover {
-    scale: 1.5;
+    scale: 1.1;
     rotate: -5deg;
     filter: brightness(100%);
     transition-duration: 1s;
@@ -419,22 +395,55 @@ h3 {color: rgb(255, 0, 0);
 }
 
 .pagetitletext {    
-    margin-top: 200px;
-    padding: 50px;
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+
+
+.pagetitletextdiv {    
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .footertext {
     color: white;
     font-family: Franklin Gothic;
-    font-size: 25;
+    font-size: 32;
     padding-left: 25px;
     text-align: left;
+}
+
+#examplevideo {
+    max-width: 600px;
+    margin: auto;
+}
+
+#contactmeshortcut {
+    margin: 0px;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 555;
+    cursor: hand;
+    scale: 1;
+    rotate: 0deg;
+    opacity: 50%;
+    transition-duration: .3s;
+}
+
+#contactmeshortcut:hover {
+    scale: 1.1;
+    rotate: 5deg;
+    opacity: 100%;
+    transition-duration: .3s;
 }
 
 .textlink {
     color: white;
     font-family: Franklin Gothic;
-    font-size: 32;
+    font-size: 45;
     padding-left: 25px;
     text-align: center;
     letter-spacing: 0px;
@@ -448,3 +457,5 @@ h3 {color: rgb(255, 0, 0);
     scale: 1.1;
     transition-duration: .5s;
 }
+
+a {text-decoration: none}

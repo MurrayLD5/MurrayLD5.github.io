@@ -39,6 +39,7 @@ body::selection {background-color: rgba(255, 0, 0, .3)}
 h1 {color: rgb(255, 255, 255);
     background-color: transparent;
     font-family: Franklin Gothic;
+    font-size: 23;
     text-decoration: none;
     font-weight: normal;
     padding-top: 5px;
@@ -47,7 +48,7 @@ h1 {color: rgb(255, 255, 255);
 }
 
 h1:hover {
-    color: rgb(255, 0, 0);
+    color: rgb(175, 0, 0);
     padding-top: 0px;
     padding-bottom: 5px;
 }
@@ -337,8 +338,9 @@ button:hover {
     padding-top: 25px;
     padding-bottom: 25px;
     margin-top: 100px;
-    border-radius: 35px;
+    border-radius: 17px;/*35px;*/
     margin-bottom: 100px;
+    transition: background-color 0.5s ease;
 }
 
 .portfoliosectionphone {background-color: rgb(25, 25, 25);
@@ -351,11 +353,11 @@ button:hover {
     margin-bottom: 100px;
 }
 
-h3 {color: rgb(255, 0, 0);
+h3 {color: rgb(175, 0, 0);
     font-family: Franklin Gothic;
-    font-size: 45;
+    font-size: 30;
     text-decoration: none;
-    text-align: left;
+    text-align: center;
     padding-left: 25px;
     transition-duration: .5s;
 }
