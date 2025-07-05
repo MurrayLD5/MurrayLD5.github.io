@@ -98,6 +98,7 @@ div {
     background-color: none;
     width: 80%;
     padding: 10px;
+    border-radius: 20px;
 }
 
 /**/
@@ -235,7 +236,7 @@ button {
     padding-top: 10px;
     padding-bottom: 10px;
     cursor: hand;
-    border-radius: 5px;
+    border-radius: 20px;
     scale: 1;
     transition-duration: .5s;
 }
@@ -260,6 +261,7 @@ button:hover {
     width: 50%;
     margin: auto;
     text-align: center;
+    border-radius: 20px;
     transition-duration: .3s;
 }
 
@@ -280,7 +282,7 @@ button:hover {
     border-color: #1877F2;
     border-width: 3px;
     cursor: hand;
-    border-radius: 5px;
+    border-radius: 20px;
     letter-spacing: normal;
     margin-top: 50px;
     width: 450px;
@@ -307,7 +309,7 @@ button:hover {
     border-color: #23a352;
     border-width: 3px;
     cursor: hand;
-    border-radius: 5px;
+    border-radius: 20px;
     letter-spacing: normal;
     margin-top: 50px;
     width: 450px;
@@ -338,7 +340,7 @@ button:hover {
     padding-top: 25px;
     padding-bottom: 25px;
     margin-top: 100px;
-    border-radius: 17px;/*35px;*/
+    border-radius: 20px;/*35px;*/
     margin-bottom: 100px;
     transition: background-color 0.5s ease;
 }
@@ -349,7 +351,7 @@ button:hover {
     padding-top: 25px;
     padding-bottom: 25px;
     margin-top: 100px;
-    border-radius: 35px;
+    border-radius: 20px;
     margin-bottom: 100px;
 }
 
