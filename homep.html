@@ -1,5 +1,12 @@
-<html style="overflow-x: hidden">
+<html>
     <link id="stylesheetmain" rel="stylesheet" href="styles/stylephone.css">
+    <script>
+        function update_stylesheet() {
+            if (window.innerWidth <= window.innerHeight) {
+                window.location.href = "homep.html";
+            };
+        };
+        update_stylesheet();
     </script>
     <head>
         <title>MurrayLD - Home</title>
@@ -7,7 +14,32 @@
     <header class="banner">
         <iframe src="headerpage.html" width="100%" height="125px" style="border: none"></iframe>
     </header>
-    <body style="overflow-x: hidden">
+    <body>
+        <image id="backgroundimage" src="images/portfolio/liveeventsworkshop/liveeventsworkshop3.png" style="filter: brightness(30%); position: fixed; top: 100px; left: 0px; z-index:-10"></image>
+        <script>
+            var which_image = Math.floor(Math.random() * 3);
+            console.log(which_image);
+            if (which_image == 0) {
+                document.getElementById("backgroundimage").src = "images/portfolio/liveeventsworkshop/liveeventsworkshop1.png";
+            };
+            if (which_image == 1) {
+                document.getElementById("backgroundimage").src = "images/portfolio/liveeventsworkshop/liveeventsworkshop2.png";
+            };
+            if (which_image == 2) {
+                document.getElementById("backgroundimage").src = "images/portfolio/liveeventsworkshop/liveeventsworkshop3.png";
+            };
+            if (window.innerWidth >= window.innerHeight) {
+                document.getElementById("backgroundimage").width = window.innerWidth * 1.1;
+            };
+            if (window.innerWidth < window.innerHeight) {
+                document.getElementById("backgroundimage").height = window.innerHeight * 1.1;
+            };
+            function update_y() {
+                document.getElementById("backgroundimage").style.top = -(window.scrollY) / 10;
+                setTimeout(update_y, 10);
+            };
+            update_y();
+        </script>
         <div id="welcome">
             <video src="videos/Top Text.mp4" autoplay muted width="200%" style="margin-left: -380"></video>
         </div>
@@ -70,20 +102,7 @@
                 setTimeout(update_opacity, 10);
             }
             update_opacity();
-            function update_background() {
-                if (window.innerWidth <= window.innerHeight) {
-                    document.getElementById("backgroundvideo").style.width = window.innerHeight;
-                };
-                if (window.innerWidth > window.innerHeight) {
-                    document.getElementById("backgroundvideo").style.width = window.innerWidth;
-                };
-            }
-            update_background();
         </script>
-    <script>
-        document.getElementById("contactmeshortcut").style.top = window.innerHeight - 100;
-        document.getElementById("contactmeshortcut").style.left = window.innerWidth - 115;
-    </script>
     </body>
     <footer>
         <iframe id="footerpage" src="footerpage.html" style="border: none; height: 250px" width="100%"></iframe>
