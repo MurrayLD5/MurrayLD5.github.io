@@ -7,18 +7,18 @@
         <iframe src="headerpage.html" width="100%" height="125px" style="border: none"></iframe>
     </header>
     <body style="overflow-x: hidden">
-        <image id="backgroundimage" src="images/portfolio/liveeventsworkshop/liveeventsworkshop3.png" style="filter: brightness(30%); position: fixed; top: 100px; left: 0px; z-index:-10"></image>
+        <image id="backgroundimage" src="images/backgroundimages/liveeventsworkshop1.png" style="filter: brightness(30%); position: fixed; top: 100px; left: 0px; z-index:-10"></image>
         <script>
             var which_image = Math.floor(Math.random() * 3);
             console.log(which_image);
             if (which_image == 0) {
-                document.getElementById("backgroundimage").src = "images/portfolio/liveeventsworkshop/liveeventsworkshop1.png";
+                document.getElementById("backgroundimage").src = "images/backgroundimages/liveeventsworkshop1.png";
             };
             if (which_image == 1) {
-                document.getElementById("backgroundimage").src = "images/portfolio/liveeventsworkshop/liveeventsworkshop2.png";
+                document.getElementById("backgroundimage").src = "images/backgroundimages/liveeventsworkshop2.png";
             };
             if (which_image == 2) {
-                document.getElementById("backgroundimage").src = "images/portfolio/liveeventsworkshop/liveeventsworkshop3.png";
+                document.getElementById("backgroundimage").src = "images/backgroundimages/liveeventsworkshop3.png";
             };
             if (window.innerWidth >= window.innerHeight) {
                 document.getElementById("backgroundimage").width = window.innerWidth * 1.1;
