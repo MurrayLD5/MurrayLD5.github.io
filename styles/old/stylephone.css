@@ -1,0 +1,463 @@
+body {background-color: black;
+    overflow-x: hidden;
+}
+
+body::selection {background-color: rgba(255, 0, 0, .3)}
+
+#banner {background-color: rgb(10, 10, 10);
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    height: 100px;
+    width: 100%;
+    padding-top: 0px;
+    z-index: 5;
+}
+
+#toplogo {height: 40px;
+    padding-top: 0px;
+    padding-left: 10px;
+    rotate: 0deg;
+    scale: 1.5;
+    transition-duration: .5s;
+}
+
+#toplogo:hover {rotate: -5deg;
+    scale: 1.8;
+    transition-duration: .5s;
+}
+
+.linkbox {width:33%;
+    padding-top: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    scale: 1.5;
+}
+
+h1 {color: rgb(175, 0, 0);
+    background-color: rgb(25, 25, 25);
+    font-family: Franklin Gothic;
+    text-decoration: none;
+    cursor: hand;
+    text-align: center;
+    /*padding: 10px;
+    padding-top: 10px;*/
+    padding: 10px;
+    padding-bottom: 10px;
+    filter: blur(0px);
+    scale: 1;
+    border-radius: 5px;
+    transition-duration: .5s;
+}
+
+h1:hover {
+    color: rgb(255, 100, 0);
+    background-color: rgb(50, 25, 25);
+    /*padding-top: 0px;
+    padding-bottom: 20px;*/
+    filter: blur(0px);
+    scale: 1;
+    transition-duration: .25s;
+}
+
+h1:active {
+    color: rgb(255, 100, 0);
+    background-color: rgb(175, 0, 0);
+    /*padding-top: 0px;
+    padding-bottom: 20px;*/
+    filter: blur(0px);
+    scale: 1;
+    transition-duration: .25s;
+}
+
+/**/
+
+#welcomeimage {
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+}
+
+#topclip {
+    visibility: visible;
+    scale: 1.9;
+}
+
+#welcometext {
+    color: white;
+    font-family: Franklin Gothic;
+    font-size: 100;
+    position: absolute;
+    top: 30px;
+    width: 95%;
+    text-align: center;
+    cursor: grab;
+}
+
+#welcomesubtext {
+    color: white;
+    font-family: Franklin Gothic;
+    font-size: 30;
+    position: absolute;
+    top: 225px;
+    width: 95%;
+    text-align: center;
+    cursor: grab;
+}
+
+div {margin-top: 105px;
+    margin-bottom: 105px;
+}
+
+/**/
+
+#about {
+    opacity: 0%;
+}
+
+p {
+    background: linear-gradient(to right, rgb(175, 0, 0), rgb(255, 100, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: Franklin Gothic;
+    font-size: 60;
+    text-align: center;
+}
+
+p::selection {
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 0, 0, .5);
+}
+
+#abouttext {
+    margin-top: 100px;
+    opacity: 100%;
+}
+
+/**/
+
+#softwareiuse {
+    opacity: 0%;
+}
+
+.softwareiuselogo {opacity: 50%;
+    cursor: hand;
+    min-height: 200px;
+    max-width: 100%;
+    padding: 10px;
+    rotate: 0deg;
+    scale: 1;
+    transition-duration: .5s}
+
+.softwareiuselogo:hover {opacity: 100%;
+    rotate: -5deg;
+    scale: 1.1;
+    transition-duration: .5s}
+    
+.softwareiuselogo2 {opacity: 50%;
+    cursor: hand;
+    min-height: 200px;
+    max-width: 100%;
+    padding: 10px;
+    rotate: 0deg;
+    scale: 1;
+    transition-duration: .5s}
+
+.softwareiuselogo2:hover {opacity: 100%;
+    rotate: 5deg;
+    scale: 1.1;
+    transition-duration: .5s}
+
+/**/
+
+h5 {
+    color: white;
+    font-family: Franklin Gothic;
+    font-size: 16;
+    padding-left: 50px;
+    padding-top: 25px;
+}
+
+footer {
+    background-color: rgb(10, 10, 10);
+    margin-left: -8px;
+    width: 101%;
+    height: 100px;
+    margin-bottom: -8px;
+}
+
+/**/
+
+.sociallogo {
+    height: 50px;
+    align-self: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    cursor: hand;
+    filter: brightness(50%);
+    rotate: 0deg;
+    opacity: 0%;
+    animation: flyUp 0.5s ease-out forwards;
+    position: relative;
+    scale: 2.1;
+    transition-duration: .5s}
+
+.sociallogo:hover {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    filter: brightness(100%);
+    scale: 2.5;
+    transition-duration: .5s
+}
+
+@keyframes flyUp {
+    from {
+        transform: translateY(300px);
+        opacity: 0%;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 100%;
+    }
+}
+
+.sociallogobg {height: 100px;
+    align-self: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    cursor: hand;
+    filter: brightness(50%);
+    rotate: 0deg;
+    scale: 1;
+    filter: grayscale(100%);
+    transition-duration: .5s}
+
+.sociallogobg:hover {scale: 1.1;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    filter: brightness(100%);
+    scale: 1.25;
+    filter: grayscale(0%);
+    transition-duration: .5s
+}
+
+.sociallogobgny {height: 100px;
+    align-self: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    cursor: hand;
+    filter: brightness(50%);
+    rotate: 0deg;
+    scale: 1;
+    filter: grayscale(100%);
+    transition-duration: .5s}
+
+.sociallogobgny:hover {scale: 1.1;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    filter: brightness(100%);
+    scale: 1.25;
+    filter: grayscale(100%);
+    transition-duration: .5s
+}
+
+button {
+    color: red;
+    background-color: rgb(10, 10, 10);
+    font-family: Franklin Gothic;
+    font-size: 25;
+    padding: 25px;
+    border: solid;
+    border-color: red;
+    border-width: 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: hand;
+    border-radius: 5px;
+    scale: 1;
+    transition-duration: .5s;
+}
+
+button:hover {
+    color: rgb(255, 100, 0);
+    background-color: rgba(255, 0, 0, .3);
+    padding-top: 0px;
+    padding-bottom: 20px;
+    scale: 1.1;
+    transition-duration: .5s;
+}
+
+#fbbutton {
+    color: white;
+    background-color: rgba(24, 118, 242, 0.3);
+    font-family: Franklin Gothic;
+    font-size: 80;
+    padding: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: solid;
+    border-color: #1877F2;
+    border-width: 3px;
+    cursor: hand;
+    border-radius: 5px;
+    letter-spacing: normal;
+    margin-top: 50px;
+    width: 80%;
+    transition-duration: .5s;
+}
+
+#fbbutton:hover {
+    color: white;
+    background-color: rgba(24, 118, 242, 0.5);
+    border-color: rgba(24, 118, 242, 0);
+    letter-spacing: 1px;
+    transition-duration: .5s;
+}
+
+#obutton {
+    color: white;
+    background-color: rgba(40, 168, 234, .3);
+    font-family: Franklin Gothic;
+    font-size: 25;
+    padding: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: solid;
+    border-color: #1877F2;
+    border-width: 3px;
+    cursor: hand;
+    border-radius: 5px;
+    letter-spacing: normal;
+    margin-top: 50px;
+    width: 450px;
+    transition-duration: .5s;
+}
+
+#obutton:hover {
+    color: white;
+    background-color: rgba(40, 168, 234, .5);
+    border-color: rgba(24, 118, 242, 0);
+    letter-spacing: 1px;
+    transition-duration: .5s;
+}
+
+#wbutton {
+    color: white;
+    background-color: rgba(37, 211, 102, .3);
+    font-family: Franklin Gothic;
+    font-size: 25;
+    padding: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: solid;
+    border-color: #23a352;
+    border-width: 3px;
+    cursor: hand;
+    border-radius: 5px;
+    letter-spacing: normal;
+    margin-top: 50px;
+    width: 450px;
+    transition-duration: .5s;
+}
+
+#wbutton:hover {
+    color: white;
+    background-color: rgba(37, 211, 102, .5);
+    border-color: rgba(24, 118, 242, 0);
+    letter-spacing: 1px;
+    transition-duration: .5s;
+}
+
+.pictureiconforrotate {
+    rotate: 0deg;
+    transition-duration: 0s;
+}
+
+.pictureiconforrotate:hover {
+    rotate: -360deg;
+    transition-duration: .5s;
+}
+
+.portfoliosection {background-color: rgb(25, 25, 25);
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-top: 100px;
+    border-radius: 35px;
+    margin-bottom: 100px;
+}
+
+h3 {color: rgb(175, 0, 0);
+    font-family: Franklin Gothic;
+    font-size: 45;
+    text-decoration: none;
+    text-align: left;
+    padding-left: 25px;
+    transition-duration: .5s;
+}
+
+.portfolioimage {
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    scale: 1;
+    rotate: 0deg;
+    filter: brightness(50%);
+    transition-duration: 1s;
+}
+
+.portfolioimage:hover {
+    scale: 1.5;
+    rotate: -5deg;
+    filter: brightness(100%);
+    transition-duration: 1s;
+}
+
+.portfoliotext {
+    color: white;
+    font-family: Franklin Gothic;
+    font-size: 20;
+    text-align: left;
+}
+
+.portfoliodate {
+    color: white;
+    font-size: 25;
+}
+
+.pagetitletext {    
+    margin-top: 200px;
+    padding: 50px;
+}
+
+.footertext {
+    color: white;
+    font-family: Franklin Gothic;
+    font-size: 25;
+    padding-left: 25px;
+    text-align: left;
+}
+
+.textlink {
+    color: white;
+    font-family: Franklin Gothic;
+    font-size: 32;
+    padding-left: 25px;
+    text-align: center;
+    letter-spacing: 0px;
+    scale: 1;
+    transition-duration: .5s;
+}
+
+.textlink:hover {
+    color: red;
+    letter-spacing: 5px;
+    scale: 1.1;
+    transition-duration: .5s;
+}
