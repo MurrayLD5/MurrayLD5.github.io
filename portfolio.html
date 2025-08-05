@@ -1,0 +1,115 @@
+<html>
+    <link id="stylesheetmain" rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Keania+One">
+    <head>
+        <title>MurrayLD - Portfolio</title>
+    </head>
+    <header class="banner">
+        <iframe src="headerpage.html" width="100%" height="125px" style="border: none"></iframe>
+    </header>
+    <body>
+        <image id="backgroundimage" src="images/backgroundimage.png"></image>
+        <div class="pagetitletextdiv">
+            <p class="pagetitletext">Portfolio</p>
+        </div>
+        <a href="theaddamsfamily.html"><image id="portfoliothumbnail_theaddamsfamily" class="portfoliothumbnail" src="images/portfolio/theaddamsfamily/thumbnail.png"></image></a>
+        <a href="lapasummershowcase2025.html"><image id="portfoliothumbnail_summershowcase2025" class="portfoliothumbnail" src="images/portfolio/summershowcase2025/thumbnail.png"></image></a>
+        <a href="liveeventsworkshop.html"><image id="portfoliothumbnail_liveeventsworkshop" class="portfoliothumbnail" src="images/portfolio/liveeventsworkshop/thumbnail.png"></image></a>
+        <a href="theaddamsfamily.html"><image id="portfoliothumbnail_thelittlemermaid" class="portfoliothumbnail" src="images/portfolio/thelittlemermaid/thumbnail.png"></image></a>
+        <image id="portfoliothumbnail_aladinonice" class="portfoliothumbnail" src="images/portfolio/aladdinonice/thumbnail.png"></image>
+        <image id="portfoliothumbnail_christmastalentshow" class="portfoliothumbnail" src="images/portfolio/christmastalentshow/thumbnail.png"></image>
+        <script>
+            var portfoliothumbnail_theaddamsfamily_opacity = 0;
+            var portfoliothumbnail_summershowcase2025_opacity = 0;
+            var portfoliothumbnail_liveeventsworkshop_opacity = 0;
+            var portfoliothumbnail_thelittlemermaid_opacity = 0;
+            var portfoliothumbnail_aladinonice_opacity = 0;
+            var portfoliothumbnail_christmastalentshow_opacity = 0;
+            function update_thumbnails() {
+                if (document.getElementById("portfoliothumbnail_theaddamsfamily").getBoundingClientRect().top >= window.innerHeight) {
+                    if (portfoliothumbnail_theaddamsfamily_opacity > 0) {
+                        portfoliothumbnail_theaddamsfamily_opacity = portfoliothumbnail_theaddamsfamily_opacity - 20;
+                    }
+                }
+                else {
+                    if (portfoliothumbnail_theaddamsfamily_opacity < 100) {
+                        portfoliothumbnail_theaddamsfamily_opacity = portfoliothumbnail_theaddamsfamily_opacity + 20;
+                    }
+                };
+                if (document.getElementById("portfoliothumbnail_summershowcase2025").getBoundingClientRect().top >= window.innerHeight) {
+                    if (portfoliothumbnail_summershowcase2025_opacity > 0) {
+                        portfoliothumbnail_summershowcase2025_opacity = portfoliothumbnail_summershowcase2025_opacity - 20;
+                    }
+                }
+                else {
+                    if (portfoliothumbnail_summershowcase2025_opacity < 100) {
+                        portfoliothumbnail_summershowcase2025_opacity = portfoliothumbnail_summershowcase2025_opacity + 20;
+                    }
+                };
+                if (document.getElementById("portfoliothumbnail_liveeventsworkshop").getBoundingClientRect().top >= window.innerHeight) {
+                    if (portfoliothumbnail_liveeventsworkshop_opacity > 0) {
+                        portfoliothumbnail_liveeventsworkshop_opacity = portfoliothumbnail_liveeventsworkshop_opacity - 20;
+                    }
+                }
+                else {
+                    if (portfoliothumbnail_liveeventsworkshop_opacity < 100) {
+                        portfoliothumbnail_liveeventsworkshop_opacity = portfoliothumbnail_liveeventsworkshop_opacity + 20;
+                    }
+                };
+                if (document.getElementById("portfoliothumbnail_thelittlemermaid").getBoundingClientRect().top >= window.innerHeight) {
+                    if (portfoliothumbnail_thelittlemermaid_opacity > 0) {
+                        portfoliothumbnail_thelittlemermaid_opacity = portfoliothumbnail_thelittlemermaid_opacity - 20;
+                    }
+                }
+                else {
+                    if (portfoliothumbnail_thelittlemermaid_opacity < 100) {
+                        portfoliothumbnail_thelittlemermaid_opacity = portfoliothumbnail_thelittlemermaid_opacity + 20;
+                    }
+                };
+                if (document.getElementById("portfoliothumbnail_aladinonice").getBoundingClientRect().top >= window.innerHeight) {
+                    if (portfoliothumbnail_aladinonice_opacity > 0) {
+                        portfoliothumbnail_aladinonice_opacity = portfoliothumbnail_aladinonice_opacity - 20;
+                    }
+                }
+                else {
+                    if (portfoliothumbnail_aladinonice_opacity < 100) {
+                        portfoliothumbnail_aladinonice_opacity = portfoliothumbnail_aladinonice_opacity + 20;
+                    }
+                };
+                if (document.getElementById("portfoliothumbnail_christmastalentshow").getBoundingClientRect().top >= window.innerHeight) {
+                    if (portfoliothumbnail_christmastalentshow_opacity > 0) {
+                        portfoliothumbnail_christmastalentshow_opacity = portfoliothumbnail_christmastalentshow_opacity - 20;
+                    }
+                }
+                else {
+                    if (portfoliothumbnail_christmastalentshow_opacity < 100) {
+                        portfoliothumbnail_christmastalentshow_opacity = portfoliothumbnail_christmastalentshow_opacity + 20;
+                    }
+                };
+                document.getElementById("portfoliothumbnail_theaddamsfamily").style.opacity = portfoliothumbnail_theaddamsfamily_opacity + "%";
+                document.getElementById("portfoliothumbnail_summershowcase2025").style.opacity = portfoliothumbnail_summershowcase2025_opacity + "%";
+                document.getElementById("portfoliothumbnail_liveeventsworkshop").style.opacity = portfoliothumbnail_liveeventsworkshop_opacity + "%";
+                document.getElementById("portfoliothumbnail_thelittlemermaid").style.opacity = portfoliothumbnail_thelittlemermaid_opacity + "%";
+                document.getElementById("portfoliothumbnail_aladinonice").style.opacity = portfoliothumbnail_aladinonice_opacity + "%";
+                document.getElementById("portfoliothumbnail_christmastalentshow").style.opacity = portfoliothumbnail_christmastalentshow_opacity + "%";
+                setTimeout(update_thumbnails, 100);
+            }
+            update_thumbnails();
+        </script>
+    </body>
+    <footer>
+        <iframe id="footerpage" src="footerpage.html" style="border: none; height: 250px" width="100%"></iframe>
+    </footer>
+    <script>
+        function update_stylesheet() {
+            if (window.innerWidth <= window.innerHeight) {
+                document.getElementById("stylesheetmain").href = "stylephone.css";
+                document.getElementById("footerpage").style.height = "400px";
+            };
+            if (window.innerWidth > window.innerHeight) {
+                document.getElementById("stylesheetmain").href = "style.css";
+            };
+        };
+        update_stylesheet();
+    </script>
+</html>

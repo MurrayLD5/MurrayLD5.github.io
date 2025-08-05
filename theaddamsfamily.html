@@ -1,0 +1,66 @@
+<html>
+    <link id="stylesheetmain" rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Keania+One">
+    <head>
+        <title>MurrayLD - The Addams Family</title>
+    </head>
+    <header class="banner">
+        <iframe src="headerpage.html" width="100%" height="125px" style="border: none"></iframe>
+    </header>
+    <body>
+        <image id="backgroundimage" src="images/backgroundimage.png"></image>
+        <div class="pagetitletextdiv">
+            <p class="portfoliotitle">The Addams Family</p>
+            <h3 class="portfolioh3">Date: 13/July/2025</h3>
+            <h3 class="portfolioh3">Venue: Sir Harry Smith Community College</h3>
+            <p class="portfoliotext">Programmed and operated lighting for a theatre company's production of <i>The Addams Family</i>; I have worked with Limelight Academy of Performing Arts (LAPA) on multiple occasions, and audience feedback praised it as LAPA's best production to date.</p>
+        </div>
+        <div>
+            <image id="displayedimage" src="images/portfolio/theaddamsfamily/theaddamsfamily1.png"></image>
+            <table id="imagethumbnailtable">
+                <tr>
+                    <script>
+                        function changethumbnail_1() {
+                            document.getElementById("displayedimage").src = "images/portfolio/theaddamsfamily/theaddamsfamily1.png";
+                        };
+                        function changethumbnail_2() {
+                            document.getElementById("displayedimage").src = "images/portfolio/theaddamsfamily/theaddamsfamily2.png";
+                        };
+                        function changethumbnail_3() {
+                            document.getElementById("displayedimage").src = "images/portfolio/theaddamsfamily/theaddamsfamily3.png";
+                        };
+                    </script>
+                    <td><image id="imagethumbnail1" onclick="changethumbnail_1()" class="imagethumbnail" src="images/portfolio/theaddamsfamily/theaddamsfamily1.png"></image></td>
+                    <td><image id="imagethumbnail2" onclick="changethumbnail_2()" class="imagethumbnail" src="images/portfolio/theaddamsfamily/theaddamsfamily2.png"></image></td>
+                    <td><image id="imagethumbnail3" onclick="changethumbnail_3()" class="imagethumbnail" src="images/portfolio/theaddamsfamily/theaddamsfamily3.png"></image></td>
+                </tr>
+            </table>
+        </div>
+        <div>            
+            <h3 class="portfolioh3">I worked with:</h3>
+            <table id="imagethumbnailtable">
+                <tr>
+                    <td><image class="imagethumbnaillogo" src="images/logos/logolapa.png"></image></td>
+                    <td><image class="imagethumbnaillogo" src="images/logos/ytlogo.png"></image></td>
+                    <td><image class="imagethumbnaillogo" src="images/logos/mllogo.png"></image></td>
+                    <td><image class="imagethumbnaillogo" src="images/logos/logoph.png"></image></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+    <footer>
+        <iframe id="footerpage" src="footerpage.html" style="border: none; height: 250px" width="100%"></iframe>
+    </footer>
+    <script>
+        function update_stylesheet() {
+            if (window.innerWidth <= window.innerHeight) {
+                document.getElementById("stylesheetmain").href = "stylephone.css";
+                document.getElementById("footerpage").style.height = "400px";
+            };
+            if (window.innerWidth > window.innerHeight) {
+                document.getElementById("stylesheetmain").href = "style.css";
+            };
+        };
+        update_stylesheet();
+    </script>
+</html>

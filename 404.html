@@ -1,0 +1,36 @@
+<html>
+    <link id="stylesheetmain" rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Keania+One">
+    <head>
+        <title>MurrayLD - 404 Page Not Found</title>
+    </head>
+    <header class="banner">
+        <iframe src="headerpage.html" width="100%" height="125px" style="border: none"></iframe>
+    </header>
+    <body>
+        <image id="backgroundimage" src="images/backgroundimage.png"></image>
+        <table height="100px">
+            <tr><td></td></tr>
+        </table>
+        <div>
+            <p>404 -<br><br>Sorry, that page could not be found!</p>
+            <h5 width="100%" style="text-align: center; font-size: 100; margin-top: 0px">😔</h5>
+            <a href="home.html" style="text-decoration: none"><h1 style="width: 25%; margin: auto; margin-top: -100px">Go to home page</h1></a>
+        </div>
+    </body>
+    <footer>
+        <iframe id="footerpage" src="footerpage.html" style="border: none; height: 250px" width="100%"></iframe>
+    </footer>
+    <script>
+        function update_stylesheet() {
+            if (window.innerWidth <= window.innerHeight) {
+                document.getElementById("stylesheetmain").href = "stylephone.css";
+                document.getElementById("footerpage").style.height = "400px";
+            };
+            if (window.innerWidth > window.innerHeight) {
+                document.getElementById("stylesheetmain").href = "style.css";
+            };
+        };
+        update_stylesheet();
+    </script>
+</html>
