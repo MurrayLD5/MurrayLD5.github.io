@@ -95,7 +95,7 @@ div {
     margin: auto;
     margin-top: 200px;
     margin-bottom: 200px;
-    background-color: none;
+    background-color: black;
     width: 80%;
     padding: 10px;
     border-radius: 20px;
@@ -445,21 +445,18 @@ button:hover {
 a {text-decoration: none}
 
 .portfoliothumbnail {
-    width: 60%;
+    width: 80%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     border-radius: 25px;
     transition-duration: .5s;
     cursor: hand;
-    opacity: 0%;
     margin-top: 100px;
-    filter: brightness(50%);
     scale: 1;
 }
 
 .portfoliothumbnail:hover {
-    filter: brightness(100%);
     scale: 1.03;
 }
 
@@ -471,7 +468,6 @@ a {text-decoration: none}
     font-size: 80;
     font-weight: 500;
     margin-top: 100px;
-    margin-left: 100px;
     margin-bottom: 0px;
 }
 
@@ -479,7 +475,6 @@ a {text-decoration: none}
     font-family: Keania One;
     font-size: 35;
     font-weight: normal;
-    margin-left: 100px;
 }
 
 .portfoliotext {
@@ -487,39 +482,33 @@ a {text-decoration: none}
     font-family: Keania One;
     font-size: 40;
     text-align: left;
-    width: 80%;
+    width: 100%;
     padding-top: 100px;
-    margin-left: 100px;
 }
 
 #displayedimage {
-    width: 80%;
-    height: 30%;
-    border-style: solid;
-    border-color: red;
-    border-width: 1px;
+    width: 100%;
+    height: 40%;
     display: block;
     margin: auto;
-    margin-top: -100px;
+    margin-top: 50px;
 }
 
 #imagethumbnailtable {
     width: 60%;
     height: 100px;
-    display: block;
     margin: auto;
     margin-top: 50px;
-    margin-bottom: -100px;
+    margin-bottom: 50px;
 }
 
 .imagethumbnail {
     width: 150px;
     height: 100px;
-    border-style: solid;
-    border-color: red;
-    border-width: 1px;
     filter: saturate(50%);
     cursor: hand;
+    margin: auto;
+    display: block;
     transition-duration: .1s;
 }
 
@@ -530,12 +519,8 @@ a {text-decoration: none}
 .imagethumbnaillogo {
     width: 150px;
     height: 50px;
-    filter: brightness(90%);
-    transition-duration: .1s;
-}
-
-.imagethumbnaillogo:hover {    
-    filter: brightness(100%);
+    margin: auto;
+    display: block;
 }
 
 #backgroundimage {
