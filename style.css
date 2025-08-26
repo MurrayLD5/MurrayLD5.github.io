@@ -38,7 +38,7 @@ body::selection {background-color: rgba(255, 0, 0, .3)}
 
 h1 {color: rgb(255, 255, 255);
     background-color: transparent;
-    font-family: Keania One;
+    font-family: Fira Sans Regular;
     font-size: 23;
     text-decoration: none;
     font-weight: normal;
@@ -75,7 +75,7 @@ h1:hover {
 
 #titletext {
     color: white;
-    font-family: Keania One;
+    font-family: Fira Sans Regular;
     font-size: 100;
     margin: auto;
     cursor: grab;
@@ -85,7 +85,7 @@ h1:hover {
 
 #subtext {
     color: white;
-    font-family: Keania One;
+    font-family: Fira Sans Regular;
     font-size: 30;
     width: 100%;
     text-align: center;
@@ -109,7 +109,7 @@ div {
 
 p {
     color: white;
-    font-family: Keania One;
+    font-family: Fira Sans Regular;
     font-size: 30;
     text-align: center;
     font-weight: 500;
@@ -159,7 +159,7 @@ p::selection {
 
 h5 {
     color: white;
-    font-family: Keania One;
+    font-family: Fira Sans Regular;
     font-size: 16;
     padding-left: 50px;
     padding-top: 25px;
@@ -227,7 +227,7 @@ footer {
 button {
     color: red;
     background-color: rgb(10, 10, 10);
-    font-family: Keania One;
+    font-family: Fira Sans Regular;
     font-size: 25;
     padding: 25px;
     border: solid;
@@ -252,7 +252,7 @@ button:hover {
 
 #instabutton {color: white;
     background-color: none;
-    font-family: Keania One;
+    font-family: Fira Sans Regular;
     font-size: 35;
     text-decoration: none;
     font-weight: normal;
@@ -273,7 +273,7 @@ button:hover {
 #obutton {
     color: white;
     background-color: rgba(40, 168, 234, .3);
-    font-family: Keania One;
+    font-family: Fira Sans Regular;
     font-size: 25;
     padding: 25px;
     padding-top: 10px;
@@ -300,7 +300,7 @@ button:hover {
 #wbutton {
     color: white;
     background-color: rgba(37, 211, 102, .3);
-    font-family: Keania One;
+    font-family: Fira Sans Regular;
     font-size: 25;
     padding: 25px;
     padding-top: 10px;
@@ -375,7 +375,7 @@ button:hover {
 
 .footertext {
     color: white;
-    font-family: Keania One;
+    font-family: Fira Sans Regular;
     font-size: 16;
     padding-left: 25px;
     text-align: left;
@@ -410,7 +410,7 @@ button:hover {
 
 .textlink {
     color: white;
-    font-family: Keania One;
+    font-family: Fira Sans Regular;
     font-size: 32;
     padding-left: 25px;
     text-align: center;
@@ -447,7 +447,7 @@ a {text-decoration: none}
 .portfoliotitle {
     color: white;
     background-color: rgba(255, 0, 0, .3);
-    font-family: Keania One;
+    font-family: Fira Sans Regular;
     text-align: left;
     font-size: 80;
     font-weight: 500;
@@ -456,14 +456,14 @@ a {text-decoration: none}
 }
 
 .portfolioh3 {color: white;
-    font-family: Keania One;
+    font-family: Fira Sans Regular;
     font-size: 30;
     font-weight: normal;
 }
 
 .portfoliotext {
     color: white;
-    font-family: Keania One;
+    font-family: Fira Sans Regular;
     font-size: 20;
     text-align: left;
     width: 80%;
